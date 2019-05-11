@@ -1,0 +1,66 @@
+//things to fix
+//y axis (inverted)
+//x axis (inverted)
+//set angle not working
+//
+class PlayerCharacter
+{
+
+    def PlayerCharacter()
+    {
+        print("Created");
+    }
+
+    def  Awake() 
+    {
+        // var vec := Vector2(0,0);
+        // PhysSystem.setGravity(&vec);
+    }
+
+    def Start()
+    {
+      
+    }
+
+    def Update() 
+    {
+       var rb := this.owner.getRigidBody();
+       var force := Vector2(0,0);
+      if (getPressed(KEYS_A))
+      {
+        force.x = -0.5f;
+        rb.AddForce(force);        
+      }
+      if (getPressed(KEYS_D))
+      {
+        force.x = 0.5f;
+         rb.AddForce(force);
+      }
+      if (getPressed(KEYS_SPACE))
+      {
+          force.y = -0.01f;
+          rb.AddImpulse(force);
+      }
+
+    }
+    
+    def OnTriggerEnter(Entity other) {}
+    
+    def OnTriggerExit (Entity other) {}
+
+    def OnCollisionEnter (Entity other) 
+    {
+
+      
+    }
+
+    def OnCollisionExit (Entity other) 
+    {
+     
+    }
+
+
+    var owner;
+
+    var id;
+}

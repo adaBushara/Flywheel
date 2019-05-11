@@ -1,0 +1,41 @@
+{
+  "Entities": [
+    {
+      "Position": {
+        "x": 400,
+        "y": 800
+      },
+      "Sprite": {
+        "texture": "Assets\\test.png"
+      },
+      "RigidBody": {},
+      "CircleCollider": {
+        "radius": 200
+      },
+      "ChaiBehaviour" :
+      {
+        "path" : "Assets\\Scripts\\PlayerCharacter.chai",
+        "name" : "PlayerCharacter"
+      },
+      "Rotator" :
+      {
+        "angle" : 0
+      }
+      
+    },
+    {
+      "Position": {
+        "x": 400,
+        "y": 20
+
+      },
+      "Sprite" : {
+        "texture": "Assets\\testfloor.png"
+      },
+      "RectangleCollider": {
+        "width": 800,
+        "height":  50
+      }
+    }
+  ]
+}

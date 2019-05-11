@@ -1,0 +1,49 @@
+class baseChai
+{
+
+    def baseChai()
+    {
+        
+    }
+
+    def  Awake() 
+    {
+        
+    }
+
+    def Start()
+    {
+      
+    }
+
+    def Update() 
+    {
+       
+    }
+    
+    def OnTriggerEnter(Entity other) 
+    {
+        
+    }
+    
+    def OnTriggerExit (Entity other) 
+    {
+
+    }
+
+    def OnCollisionEnter (Entity other) 
+    {
+    
+      
+    }
+
+    def OnCollisionExit (Entity other) 
+    {
+     
+    }
+
+
+    var owner;
+
+    var id;
+}

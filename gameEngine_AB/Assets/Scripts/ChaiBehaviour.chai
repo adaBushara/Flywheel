@@ -1,0 +1,32 @@
+class PlayerCharacter
+{
+
+    PlayerCharacter()
+    {
+        //do nothing in here
+    }
+
+    def  Awake() 
+    {
+        puts("awake");
+    }
+
+    def Start()
+    {
+        puts("start");
+    }
+
+    def Update() 
+    {
+        puts("update");
+    }
+    
+    def OnTriggerEnter(Entity other) {}
+    
+    def OnTriggerExit (Entity other) {}
+
+    def OnCollisionEnter (Entity other) {}
+
+    def OnCollisionExit (Entity other) {}
+    
+}
